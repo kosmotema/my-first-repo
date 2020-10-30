@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 
 namespace CoffinChick {
@@ -10,7 +10,8 @@ namespace CoffinChick {
 			InitializeComponent();
 			TrayIcon.Visibility = Visibility.Visible;
 			Hide();
-			MessageBox.Show(@"Удачной игры в ящик :)", @"Добро пожаловать!", MessageBoxButton.OK,
+			MessageBox.Show(@"Удачной игры в ящик :)
+Чтобы вылезти из ящика, нажми на значок в трее", @"Добро пожаловать!", MessageBoxButton.OK,
 				MessageBoxImage.Information);
 		}
 
