@@ -14,7 +14,7 @@
                         Visibility="Visible"
                         IconSource="/icon.ico"
                         ToolTipText="ящик - самая популярная игра в мире"
-                        TrayLeftMouseDown="TrayIcon_TrayLeftMouseDown"
-                        TrayRightMouseDown="TrayIcon_TrayRightMouseDown" />
+                        TrayLeftMouseDown="TrayIcon_TrayMouseDown"
+                        TrayRightMouseDown="TrayIcon_TrayMouseDown" />
     </Grid>
 </Window>

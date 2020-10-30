@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows;
 
 namespace CoffinChick {
@@ -22,14 +22,8 @@ namespace CoffinChick {
 				MessageBoxImage.Warning);
 		}
 
-		private void TrayIcon_TrayLeftMouseDown(object sender, RoutedEventArgs e) {
-			MessageBox.Show(@"Хочешь закрыть окно? Нажми правой кнопкой мыши по значку!", @"А зачем?",
-				MessageBoxButton.OK,
-				MessageBoxImage.Information);
-		}
-
-		private void TrayIcon_TrayRightMouseDown(object sender, RoutedEventArgs e) {
-			if (MessageBox.Show(@"А ты точно хочешь выбраться из ящика?", @"Не хочешь играть?", MessageBoxButton.YesNo,
+		private void TrayIcon_TrayMouseDown(object sender, RoutedEventArgs e) {
+			if (MessageBox.Show(@"А ты точно хочешь выбраться из ящика?", @"Надоело играть?", MessageBoxButton.YesNo,
 				MessageBoxImage.Warning) == MessageBoxResult.Yes)
 				Close();
 		}
