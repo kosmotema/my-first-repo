@@ -1,9 +1,12 @@
 ﻿<Application x:Class="CoffinChick.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:CoffinChick"
-             StartupUri="MainWindow.xaml">
+             xmlns:tb="http://www.hardcodet.net/taskbar">
     <Application.Resources>
-         
+        <tb:TaskbarIcon x:Key="TrayIcon"
+                        IconSource="/icon.ico"
+                        ToolTipText="ящик - самая популярная игра в мире"
+                        TrayLeftMouseDown="TrayIcon_TrayMouseDown"
+                        TrayRightMouseDown="TrayIcon_TrayMouseDown" />
     </Application.Resources>
 </Application>
